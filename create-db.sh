@@ -1,9 +1,9 @@
 #!/bin/bash
-
-db_name=
-db_user=
+#
+db_name=""
+db_user=""
 db_password=""
-
+#
 # Create new database
 sudo mysql -e "CREATE DATABASE $db_name"
 # Create new user
