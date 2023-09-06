@@ -7,7 +7,7 @@ db_password=""
 # Create new database
 sudo mysql -e "CREATE DATABASE $db_name"
 # Create new user
-sudo mysql -e "CREATE USER '$db_user'@'%' IDENTIFIED BY '$db_password'"
+sudo mysql -e "CREATE USER '$db_user'@'localhost IDENTIFIED BY '$db_password'"
 # Grant Access to DB
 sudo mysql -e "GRANT ALL PRIVILEGES ON $db_name.* TO '$db_user'@'localhost'"
 # Make our changes take effect
