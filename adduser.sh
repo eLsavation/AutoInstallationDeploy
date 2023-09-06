@@ -12,7 +12,7 @@ Cyan='\033[0;36m'         # Cyan
 #
 #
 echo -n "$Red \n Create User Devops for Deploy.. $Color_Off"
-sudo useradd -m devops  > /dev/null 2>&1
+useradd -s /bin/bash -d /home/devops -m devops
 echo -n "$Green \n User Devops added. $Color_Off \n"
 usermod -aG sudo devops > /dev/null 2>&1
 echo -n "$Cyan \n Devops is Sudoers $Color_Off"
