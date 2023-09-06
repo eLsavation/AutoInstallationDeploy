@@ -18,7 +18,7 @@ echo -n "$Green \n Repository PHP added \n $Color_Off"
 echo -n "$Green \n Updating System... $Color_Off"
 sudo apt-get update -y > /dev/null 2>&1
 echo -n "$Green \n System Updated. \n $Color_Off"
-sudo apt-get install php8.1 php8.1-fpm libapache2-mod-php8.1 libapache2-mod-fcgid php8.1-cli php8.1-curl php8.1-gd php8.1-gmp php8.1-mbstring php8.1-mysql php8.1-snmp php8.1-xml php8.1-zip -y > /dev/null 2>&1
+sudo apt-get install php8.1 libapache2-mod-php8.1 libapache2-mod-fcgid php8.1-cli php8.1-curl php8.1-gd php8.1-gmp php8.1-mbstring php8.1-mysql php8.1-snmp php8.1-xml php8.1-zip -y > /dev/null 2>&1
 echo -n "$Green \n PHP Installed $Color_Off"
 sudo systemctl start php8.1-fpm > /dev/null 2>&1
 echo -n "$Green \n PHP Started $Color_Off"
