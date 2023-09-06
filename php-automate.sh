@@ -12,8 +12,8 @@ Cyan='\033[0;36m'         # Cyan
 #
 echo -n "$Cyan \n Installing PHP.. $Color_Off"
 echo -n "$Cyan \n Installing PHP in Progress \n $Color_Off"
-sudo apt update > /dev/null 2>&1
-sudo apt install --no-install-recommends php8.1 > /dev/null 2>&1
+sudo apt update -y > /dev/null 2>&1
+sudo apt install --no-install-recommends php8.1 -y > /dev/null 2>&1
 sudo apt-get install php8.1-cli php8.1-curl php8.1-gd php8.1-gmp php8.1-mbstring php8.1-mysql php8.1-snmp php8.1-xml php8.1-zip -y > /dev/null 2>&1
 php -m
 php -v
