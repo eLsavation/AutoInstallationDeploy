@@ -1,5 +1,12 @@
 sudo apt install npm -y
 sudo apt install curl -y
+##install yarn
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update -y
+sudo apt install yarn -y
+sudo yarn --version
+##install nvm
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
 sudo cp ~/.bashrc /home/devops || true
 cd /home/devops
@@ -10,9 +17,3 @@ source ~/.bashrc
 nvm ls-remote
 nvm install 18
 nvm use 18
-##install yarn
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update -y
-sudo apt install yarn -y
-sudo yarn --version
