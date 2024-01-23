@@ -6,3 +6,4 @@ sudo systemctl restart zabbix-agent
 sudo systemctl enable zabbix-agent
 echo "ServerActive=139.59.105.236" | sudo tee -a /etc/zabbix/zabbix_agentd.conf
 echo "Hostname=$(hostname)" | sudo tee -a /etc/zabbix/zabbix_agentd.conf
+sudo systemctl restart zabbix-agent 
